@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/produtos.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>TechLand</title>
+</head>
+<body>
+     <div class="novoMenu">
+
+     <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="/assets/img/vandal png.png" alt="" width="125px">
+
+            </div>
+            <nav>
+                <ul id="MenuItens">
+                    <li><a href="index.html" title="">Inicio</a></li>
+                    <li><a href="produtos.html" title="">Produtos</a></li>
+                    <li><a href="" title="">Contatos</a></li>
+                    <li><a href="/minha-conta.html" title="">Minha conta</a></li>
+
+                </ul>
+            </nav>
+
+            
+            <img src="assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()"> 
+
+        </div>
+            
+    </div>
+</div>
+    <!-- Inicio da minha conta-->
+    <div class="minha-conta">
+        <div class="container">
+            <div class="linha">
+                <div class="col-2">
+                    <img src="/assets/img/banne-6.png" alt="" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="formulario">
+                        <div class="btn-form">
+                            <span onclick="Entrar()">Entrar</span>
+                            <span onclick="Cadastro()">Cadastro</span>
+                            <hr id="Indicador">
+                        </div>
+
+                        <form action="" method="post" id="EntrarPainel">
+                            <input type="email" name="email"  id="" placeholder="E-mail de acesso">
+                            <input type="password" name="senha"  id="" placeholder="Digite sua senha">
+                            <button type="submit" name="SenEntrar" class="btn">Entrar</button>
+                            <a href="">Esqueceu sua senha?</a>
+                        </form>
+
+
+                        <form action="" method="post" id="CadastroSite">
+                            <input type="text" name="nome" id="" placeholder="Nome completo">
+                            <input type="email" name="email" id="" placeholder="E-mail de acesso">
+                            <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                            <button type="submit" name="sendCad" class="btn">Cadastre-se</button>
+                       
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fim da minha conta-->
+
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <img src="/assets/img/vandal png.png" alt="" width="150px">
+            <p>It's all about your dreams.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>redes sociais</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">@Techland</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">@Techland</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">@Techland</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Produtos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">celulares</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">cloud</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Cadastre-se</h3>
+
+            <p>
+                Cadastre-se para para ganhar 10% de desconto na primeira compra
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserved
+    </div>
+</footer>
+
+
+ 
+
+
+
+
+
+
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+<script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+
+    <script src="/assets/js/login.js"></script>
+</body>
+</html>

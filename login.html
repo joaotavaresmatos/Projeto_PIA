@@ -1,0 +1,118 @@
+<?php
+
+  if (isset($_POST['submit']))
+  {
+    include_once('config.php');
+
+    $email = $_POST['email'];  
+    $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
+    $conf_senha = $_POST['conf_senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuario(email,nome,senha,conf_senha) VALUES ('$email','$nome','$senha', '$conf_senha')");
+
+  }
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="back"></div>
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
+
+<div class="container">
+    <div class="clock">
+        <div id="dia"></div>
+        <div class="wrapper">
+            <div id="time"></div>
+            <div id="meio"></div>
+        </div>
+    </div>
+
+<div class="vidro">
+    <div class="text"></div>
+
+        <div class="menu_login">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+            <label for="tab-1" class="tab">Entrar</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up">
+            <label for="tab-2" class="tab">Cadastrar</label>
+
+                <div class="form">
+                    
+                    <form class="logar" action="validador.php" method="POST">
+                        <div class="caixa">
+                            <input name="nome" type="text" class="input" placeholder="Nome de Usuário">
+                        </div>
+
+                        <div class="caixa">
+                            <input name="senha" type="password" class="input" placeholder="Senha">
+                        </div>
+
+                        <div class="caixa" id="mantenha">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Mantenha-me conectado</label>
+                        </div>
+
+                        <div class="caixa">
+                            <input type="submit" name="submit" class="button" id="entrar" value="Entrar">
+                        </div>
+                        <div class="foot-lnk">
+                            <label for="tab-2">Cadastre-se aqui
+                        </div>
+   
+                    </form>
+
+
+                        <form class="cadastrar" action="index.php" method="POST">
+                            <div class="caixa">
+                                <input id="user" name="email" type="text" class="input" placeholder="Email">
+                            </div>
+
+                            <div class="caixa">
+                                <input id="pass" name="nome" type="text" class="input" data-type="password" placeholder="Nome de Usuário">
+                            </div>
+
+                            <div class="caixa">
+                                <input id="pass" name="senha" type="password" class="input" data-type="password" placeholder="Senha">
+                            </div>
+
+                            <div class="caixa">
+                                <input id="pass" name="conf_senha" type="password" class="input" placeholder="Confirme Senha">
+                            </div>
+
+                            <div class="caixa">
+                                <input type="submit" name="submit" class="button" id="cadastro" value="Cadastrar">
+                            </div>
+
+                            <div class="foot-lnk">
+                                <label for="tab-1">Lembra sua senha? Clique aqui
+                            </div>
+                        </form>
+                        
+                </div>
+                
+        </div>
+       
+</div>
+
+</div>
+
+
+ 
+<script src="main.js"></script>
+
+</body>
+</html>
