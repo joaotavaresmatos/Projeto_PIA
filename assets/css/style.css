@@ -100,6 +100,7 @@
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+    color: #103560;
   }
   .col-2 p{
     font-weight: 600;
@@ -121,6 +122,28 @@
     color: var(--cor-btn-fonte);
     
   }
+
+  .btn1 {
+    background-color: var(--indigo-500);
+    border-radius: 8px;
+    outline: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 600;
+    padding: 16px;
+    transition: all .15s ease-in-out;
+}
+.btn1:hover {
+    background-color: var(--indigo-600);
+}
+.btn1 > i {
+    margin-right: 8px;
+}
 
   .categorias2{
     margin: 70px 0;
