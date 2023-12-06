@@ -23,6 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro joao</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/44/44973.png">
+    <link rel="shortcut icon" type="" href="/assets/img/TechLand (1).png ">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="login.css">
 </head>
